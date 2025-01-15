@@ -11,4 +11,5 @@ background-color: #f4f4f4;
 }
 .navebar{
    display: flex; 
+   justify-content: space-between;
 }
