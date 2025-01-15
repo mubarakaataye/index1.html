@@ -27,3 +27,6 @@ background-color: #f4f4f4;
     margin: 0;
     padding: 0;
   }
+  .nav-links li {
+    margin: 0 10px;
+  }
