@@ -12,3 +12,6 @@ nav{
     width: 100%;
     background-color: black;
 }
+nav ul{
+    float: right;
+}
