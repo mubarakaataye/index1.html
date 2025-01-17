@@ -16,6 +16,9 @@ nav ul{
     float: right;
     margin-right: 15px;
 }
+label .logo{
+    color: white;
+}
 nav ul li{
     display: inline-block;
 }
