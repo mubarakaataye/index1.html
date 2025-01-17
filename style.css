@@ -19,6 +19,7 @@ nav ul{
 label .logo{
     color: white;
     line-height: 80px;
+    padding-left: 20px;
 }
 nav ul li{
     display: inline-block;
