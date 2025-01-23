@@ -23,7 +23,7 @@
             min-height: 100px;
             width: 100%;
             background-color: white;
-           position: relative;
+           position: fixed;
         }
         nav ul{
             float: right;
@@ -58,13 +58,59 @@
             border-bottom: 2px solid;
             background-color: gray;
         }
-        .body{
-            width: 90%;
+       .all{
+        width: 90%;
+      
+        margin: auto;
+       }
+       .cul3{
+        width: 30%;
+        background-color: white;
+      margin-left: 8px;
+       }
+       h2{
+        color: red;
+       }
+       .cul6{
+        width: 58%;
+        float: left;
+        
+        margin-top: 8px;
+        display: block;
+        
+       }
+       .img{
+        width: 58%;
+        height: 400px;
+        display: block;
+      
+       }
+       .img:hover{
+          transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15)
+       }
+       .photo:hover{
+              transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+       } 
+       .photo{
+        margin-top: 80px;
+       }
+        
+       @media(max-width:858px){
+        nav ul li{
+            display: block;
+            line-height: 30px;
+            padding: 0 6px;
+            
         }
-        .cul3{
-            float: right;
-            width: 30%;
+        nav{
+            position: relative;
         }
+        nav ul li a{
+            display: block;
+        }
+       }
     </style>
 </head>
 <body>
@@ -91,16 +137,34 @@
             </div>
         </nav>
     </div>
-    <div class="body">
-        <div class="cul3">
+    <div class="all">
+         <div class="cul3">
             <ul>
                 <h2>زنده</h2>
                 <h1>اسراییل ۹۰ زندانی فلسطینی را آزاد کرد</h1>
                 <li>سازمان ملل: ۶۳۰ کامیون کمک های انسان دوستانه وارد نوار غزه شدند</li>
                 <li>سازمان زندان های اسراییل: ۹۰ زندانی فلسطینی به موحب توافق اتش بس غزه آزاد شدند</li>
                 <li>ترامب  اتش بس غزه را از نتایج بیروزی خود در انتخابات آمریکا خواند</li>
+                
             </ul>
+            <img class="photo" src="ii-logo-fa.svg" alt="">
+         </div>
+         <div class="cul6">
+            <h1>اسراییل ۹۰ زندانی فلسطینی را آزاد کرد</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, beatae. Magni laboriosam soluta eveniet odio veniam incidunt cupiditate ex eos sed, debitis voluptatum temporibus pariatur aliquid nobis? Autem, corporis natus!</p>
+            <img class="img" src="C:\Users\dell\Pictures\my love\Screenshot_20250120-084317_Chrome.jpg" alt="">
+        </div>
+        <div class="cul6">
+            <h1>تخلیف ترامب</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit ipsum aliquid ipsam molestias exercitationem possimus dolorum eaque ex incidunt amet quo aut modi excepturi distinctio, nobis corporis doloremque impedit?</p>
+            <img class="img" src="C:\Users\dell\Pictures\my love\Screenshot_20250120-084402_Chrome.jpg" alt="">
+        </div>
+        <div class="cul6">
+            <h1>جاجم از صدور حکم اعدام برای تتلو خبر داد</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit ipsum aliquid ipsam molestias exercitationem possimus dolorum eaque ex incidunt amet quo aut modi excepturi distinctio, nobis corporis doloremque impedit?</p>
+           <img class="img" src="C:\Users\dell\Pictures\my love\Screenshot_20250120-084431_Chrome.jpg" alt="">
         </div>
     </div>
+
 </body>
 </html>
