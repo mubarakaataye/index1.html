@@ -120,10 +120,8 @@
         nav ul li{
             display: none;
         }
-        .fa-bars{
-            nav ul li{
-                display: block;
-            }
+        .bars{
+            display: block;
         }
       }
     </style>
@@ -132,10 +130,10 @@
     <div class="container">
         <nav>
             <label class="logo"><img src="ii-logo-fa.svg" alt=""></label>
-            <div class="icon" onclick="toggleMenu()">
+            <div class="bars" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
-            <ul class="nav-link">
+            <ul class="nav-links">
                 <li><a href="#">برنامه ها</a></li>
                 <li><a href="#">تلویزیون</a></li>
                 <li><a href="#"> شنیداری</a></li>
@@ -184,9 +182,9 @@
         </div>
     </div>
     <script>
-         function toggleMenu() {
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.classList.toggle("active");
+         function toggleMenubar() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
     }
     </script>
 </body>
