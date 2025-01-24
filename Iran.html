@@ -49,6 +49,9 @@
         .fa-search{
             padding-left: 30px;
         }
+        .fa-bars{
+            display: none;
+        }
         .icon{
             line-height: 100px;
 
@@ -97,61 +100,42 @@
         margin-top: 80px;
        }
         
-       @media(max-width:858px){
+      @media(max-width:852px){
+        .fa-home{
+            display: none;
+        }
+        .fa-search{
+            display: none;
+        }
+        .fa-sun{
+            display: none;
+        }
+        .fa-bars{
+            float: left;
+            display: block;
+            margin-left: 20px;
+            line-height: 100px;
+            cursor: pointer;
+        }
         nav ul li{
-            display: block;
-            line-height: 30px;
-            padding: 0 6px;
-            
+            display: none;
         }
-        nav{
-            position: relative;
-            width: 100%;
-            display: block;
+        .fa-bars{
+            nav ul li{
+                display: block;
+            }
         }
-        nav ul li a{
-            display: block;
-            text-align: center;
-            
-        }
-       }
-       h2{
-        display: block;
-        line-height: 400px;
-        float: left;
-       }
-       *{
-        text-align: center;
-        align-items: center;
-
-       }
-       .fa-home{
-        padding-left: 2px;
-       }
-       .fa-search{
-        padding-left: 2px;
-       }
-       .fa-sun{
-        padding-left: 2px;
-       }
-       .cul3{
-        text-align: center;
-        width: 100%;
-        display: block;
-       }
-       .img{
-        height: auto;
-       }
-       .all{
-        margin: auto;
-       }
+      }
     </style>
 </head>
 <body>
     <div class="container">
         <nav>
             <label class="logo"><img src="ii-logo-fa.svg" alt=""></label>
-            <ul>
+            <div class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+            <ul class="nav-link">
                 <li><a href="#">برنامه ها</a></li>
                 <li><a href="#">تلویزیون</a></li>
                 <li><a href="#"> شنیداری</a></li>
@@ -199,6 +183,11 @@
            <img class="img" src="C:\Users\dell\Pictures\my love\Screenshot_20250120-084431_Chrome.jpg" alt="">
         </div>
     </div>
-
+    <script>
+         function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    }
+    </script>
 </body>
 </html>
