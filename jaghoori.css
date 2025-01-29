@@ -24,10 +24,10 @@ nav ul{
     padding-right: 20px;
     font-weight: bold;
     font-size: 45px;
-    font-family:IranNastaliq ;
+   
 }
 nav ul li{
-    display: inline-block;
+    display: inline;
     margin-right: 60px;
     line-height: 100px;
 }
@@ -36,11 +36,104 @@ nav ul li a {
     line-height: 80px;
     border-radius: 5px;
     padding: 7px 9px;
-    font-family: IranNastaliq;
+   
     font-size: 24px;
 }
 a:hover{
     border-bottom: 2px solid white;
     background-color:rgb(95, 91, 91);
+    #check{
+        display: none;
+       
+    }
+    .checkbtn{
+        line-height: 100px;
+        display: none;
+        margin-left: 20px;
+    }
+}@media(max-width:952px){
+    nav ul{
+        margin-right: 0px;
+    }
+    nav ul li{
+        padding: 0 2px;
+        margin-right: 4px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+     .logo a{
+        padding: 4px;
+        font-size: 15px;
+       
+    }
+}
+@media(max-width:852px){
+    nav{
+            min-height: 800px;
+            width: 100%;
+            background-color:white;
+            position: relative;
+            
+        }
+        #check{
+            display: none;
+        }
+        .logo{
+            color: black;
+        }
+    .checkbtn{
+        display: block;
+        float: left;
+        color: black;
+        margin-left: 20px;
+        line-height: 100px;
+    }
+    *{
+        color: black;
+    }
+    ul{
+        position: relative;
+       height: 20px;
+        width: 90%;
+       display: none;
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+    nav ul li{
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+    ul li a{
+        display: block;
+       text-align: center;
+       margin: 0 ;
+       padding: 0px;
+       color: black;
+      
+      
+    }
+    
+    
+    #check:checked~ul{
+        display: block;
+        
+       
+    }
+    #check:checked~ul li a{
+        color: black;
+    }
+    a:hover{
+        border-radius: none;
+        border-bottom: none;
+        background-color:rgb(172, 203, 230);
+        
+       
+       
+    }
+    
+    
     
 }
