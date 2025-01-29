@@ -68,6 +68,9 @@ a:hover{
         font-size: 25px;
         margin-bottom: -100px;
     }
+    #check{
+        display: none;
+    }
 }
 
 @media(max-width:852px){
