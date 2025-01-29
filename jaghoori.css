@@ -3,6 +3,9 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    #check{
+        display: none;
+    }
 }
 body{
     font-family: 'Times New Roman', Times, serif;
@@ -39,18 +42,17 @@ nav ul li a {
    
     font-size: 24px;
 }
+
 a:hover{
     border-bottom: 2px solid white;
     background-color:rgb(95, 91, 91);
-    #check{
-        display: none;
-       
-    }
+   
     .checkbtn{
         line-height: 100px;
         display: none;
         margin-left: 20px;
     }
+   
 }
 @media(max-width:952px){
     nav ul{
