@@ -11,6 +11,7 @@
             list-style: none;
             text-decoration: none;
             padding: 0;
+            box-sizing: border-box;
         }
         nav{
             min-height: 100px;
@@ -21,13 +22,13 @@
         nav ul{
             float: right;
             margin-right: 40px;
-            
+            display: flex;
         }
         nav ul li{
             display: inline;
             padding: 0 8px;
             line-height: 100px;
-            
+            position: relative;
             margin-right: 30px;
             
         }
@@ -37,11 +38,7 @@
             font-size: 24px;
             
         }
-        a:hover{
-            border-bottom: 2px solid;
-           
-            border-radius: 5px;
-        }
+      
         .logo{
     float: right;
     color: black;
