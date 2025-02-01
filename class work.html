@@ -13,16 +13,18 @@
     }
     .car{
         position: absolute;
-        left: -100px;
+        right: -100px;
         bottom: 100px;
+        float: right;
         animation: moveCar 4s linear infinite;
+
     }
     @keyframes moveCar {
         from {
-            left: -100px;
+            right: -100px;
         }
         to {
-            left: 100%;
+            right: 100%;
         }
 
     }
