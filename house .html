@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انیمیشن چراغ‌ها</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        .house-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .house {
+            width: 600px;
+            height: auto;
+        }
+
+        .light {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 10px yellow;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* موقعیت‌های چراغ‌ها */
+        .light {
+             display: inline;
+             text-align: center;
+             margin-top: 150px;
+             margin-right: 400px;
+            
+            animation-delay: 0s; }
+         .light {
+             display: inline;
+             padding: 4px;
+              animation-delay: 0.2s; }
+        
+    </style>
+</head>
+<body>
+    <div class="house-container">
+        <img src="pexels-binyaminmellish-106399.jpg" alt="خانه" class="house">
+        <div class="light light">
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+        <div class=" light"></div>
+    </div>
+    </div>
+</body>
+</html>
