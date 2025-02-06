@@ -144,3 +144,59 @@ a:hover{
     
     
 }
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* ارتفاع هیدر */
+    overflow: hidden;
+}
+
+/* پس‌زمینه‌ی اسلایدشو */
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fadeAnimation linear 9s infinite;
+}
+
+/* تصاویر پس‌زمینه */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 180vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideShow 9s linear infinite;
+}
+
+/* سه تصویر مختلف برای اسلایدشو */
+.slide:nth-child(1) { background-image: url('images/d.jpg'); animation-delay: 0s; }
+.slide:nth-child(2) { background-image: url('images/d1.jpg'); animation-delay: 3s; }
+.slide:nth-child(3) { background-image: url('images/d2.jpg'); animation-delay: 6s; }
+
+/* افکت تغییر تصاویر */
+@keyframes slideshow  {
+  from
+  {  right : -100px;
+}
+to {
+    right: 100%;
+}
+
+}
+/* عنوان روی هیدر */
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
