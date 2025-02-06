@@ -24,10 +24,46 @@
         }
         .magic-btn:hover{
             transform: scale(1.1);
+            box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.5);
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
 <body>
+
+    <button class="magic-btn" onclick="changeMagic()">روی من کلیک کن!</button>
+    <p class="message"></p>
+
+    <script>
+        function changeMagic() {
+            // رنگ تصادفی برای پس‌زمینه
+            let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+
+            // لیست پیام‌های تصادفی
+            let messages = [
+                "تو فوق‌العاده‌ای! ✨",
+                "امروز یک لبخند هدیه بده! 😊",
+                "هر روز یک شروع جدیده! 🚀",
+                "موفقیت در انتظار توست! 🌟",
+                "زندگی پر از شگفتی‌هاست! 🎉"
+            ];
+
+            // انتخاب پیام تصادفی
+            let randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.querySelector(".message").textContent = randomMessage;
+        }
+    </script>
+
+</body>
+</html>
+        
+   
     
 </body>
 </html>
