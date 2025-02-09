@@ -1,0 +1,72 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* ایجاد خط نورانی چرخشی */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    box-shadow: 0 0 5px white 0 0 0 white;
+    animation: rotateBorder 2.5s linear infinite;
+}
+
+
+@keyframes rotateBorder {
+    0% {
+        border-top: 3px solid white;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    25% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid white;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+    50% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid white;
+        border-left: 3px solid transparent;
+    }
+    75% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid white;
+    }
+    100% {
+        border-top: 3px solid white;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+    }
+}
