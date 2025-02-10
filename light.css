@@ -14,7 +14,7 @@ body {
     height: 200px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* ایجاد خط نورانی چرخشی */
+
 .card::before {
     content: "";
     position: absolute;
@@ -31,10 +31,10 @@ body {
     left: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
-    border-radius: 10px;
+    border-radius: 20px;
     border: 3px solid transparent;
     box-shadow: 0 0 5px white 0 0 0 white;
-    animation: rotateBorder 2.5s linear infinite;
+    animation: rotateBorder 1.5s linear infinite;
 }
 
 
