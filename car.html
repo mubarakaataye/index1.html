@@ -13,6 +13,9 @@
             text-align: center;
             color: white;
         }
+        .parallax{
+            background-image: url('https://source.unsplash.com/1600x900/?nature,mountain');
+        }
     </style>
 </head>
 <body>
@@ -23,3 +26,73 @@
     </div>
 </body>
 </html>
+افکت Parallax Scrolling یه تکنیک جالب تو طراحی وب هست که باعث میشه تصاویر پس‌زمینه نسبت به محتوای جلوتر با سرعت متفاوتی حرکت کنن، این حس عمق و پویایی به سایت میده.
+
+چطور این افکت رو توی سایتت پیاده کنی؟
+
+با CSS و HTML خیلی راحت می‌تونی این کار رو انجام بدی.
+
+۱. HTML (ساختار صفحه)
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>افکت پارالاکس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="parallax"></div>
+
+    <div class="content">
+        <h2>افکت پارالاکس</h2>
+        <p>این یک نمونه از افکت پارالاکس است که می‌تواند به زیبایی سایتت کمک کند.</p>
+    </div>
+
+</body>
+</html>
+
+۲. CSS (استایل‌دهی و ایجاد افکت)
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.parallax {
+    background-image: url('https://source.unsplash.com/1600x900/?nature,mountain'); /* لینک تصویر */
+    height: 100vh;
+    background-attachment: fixed; /* ایجاد افکت پارالاکس */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    background-color: #222;
+    padding: 50px;
+}
+
+چطور کار می‌کنه؟
+
+background-attachment: fixed; باعث میشه تصویر پس‌زمینه ثابت بمونه و فقط متن جلو حرکت کنه.
+
+background-size: cover; تصویر رو متناسب با صفحه تنظیم می‌کنه.
+
+height: 100vh; باعث میشه بخش پارالاکس کل ارتفاع صفحه رو بگیره.
+
+
+می‌خوای حرفه‌ای‌ترش کنی؟
+
+می‌تونی از چندین بخش پارالاکس استفاده کنی که با اسکرول صفحه تغییر کنن.
+
+می‌تونی با JavaScript افکت‌های پیشرفته‌تر مثل محو شدن (fade) هم بهش اضافه کنی.
+
+
+این نمونه رو تست کن، اگر خواستی جذاب‌تر بشه، بگو تا برات ارتقاش بدم!
