@@ -48,8 +48,9 @@ body {
     color: white;
     margin-left: 15px;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-.icons span:hover {
+.icons i:hover {
     color: #00aaff;
 }
