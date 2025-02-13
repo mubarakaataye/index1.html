@@ -46,6 +46,7 @@ body {
 .icons i {
     font-size: 20px;
     color: white;
+    margin-left: 15px;
 }
 
 .icons span:hover {
