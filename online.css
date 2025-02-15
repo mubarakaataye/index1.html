@@ -43,4 +43,6 @@ nav ul li a:hover{
     float: left;
     border-radius: 6px;
     width: 80px;
+    top: 2px;
+    display: inline;
 }
