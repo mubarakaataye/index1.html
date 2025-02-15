@@ -7,6 +7,7 @@
     height: 50px;
     width: 100%;
     background-color: rgb(193, 210, 224);
+    box-shadow: 0 0 12px black;
 }
 .logo img{
     height: 40px;
