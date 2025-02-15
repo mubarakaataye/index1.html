@@ -40,7 +40,8 @@ nav ul li a:hover{
 .icons input{
     float: left;
     border-radius: 6px;
-    width: 80px;
+    width: 100px;
     margin-left: 40px;
     display: inline;
+
 }
