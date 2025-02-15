@@ -43,5 +43,6 @@ nav ul li a:hover{
     width: 100px;
     margin-left: 40px;
     display: inline;
+    text-align: center;
 
 }
