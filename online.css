@@ -39,13 +39,13 @@ nav ul li a:hover{
 
 .icons input{
     float: left;
-    border-radius: 6px;
+    border-radius: 12px;
     height: 20px;
     width: 200px;
     margin-left: 40px;
     display: inline;
     text-align: center;
-    margin-top: 0;
-    padding-top: 0;
+    top: 0;
+
 
 }
