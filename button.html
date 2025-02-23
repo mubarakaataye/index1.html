@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>دکمه فراری!</title>
     <style>
-        body{
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f8f8f8;
-            font-family: Arial, Helvetica, sans-serif;
         }
-        .container{
-            position: relative;
-            width: 80vw;
-            height: 80vh;
-        }
-        .button{
+        button {
             position: absolute;
             padding: 10px 20px;
             font-size: 18px;
@@ -31,6 +29,20 @@
     </style>
 </head>
 <body>
-    
+    <button id="runaway">بزن منو بگیر!</button>
+    <script>
+        const button = document.getElementById("runaway");
+        
+        button.addEventListener("mouseover", () => {
+            let maxX = window.innerWidth - button.clientWidth;
+            let maxY = window.innerHeight - button.clientHeight;
+            
+            let randomX = Math.floor(Math.random() * maxX);
+            let randomY = Math.floor(Math.random() * maxY);
+            
+            button.style.left = ${randomX}px;
+            button.style.top = ${randomY}px;
+        });
+    </script>
 </body>
 </html>
