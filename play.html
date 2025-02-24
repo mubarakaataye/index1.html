@@ -29,9 +29,62 @@
             font-size: 14px;
             position: relative;
         }
+        .player {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
+    <h1>Snake and Ladder Game</h1>
+    <div class="board" id="board"></div>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="diceResult"></p>
     
+    <script>
+        const board = document.getElementById("board");
+        let playerPos = 1;
+
+        function createBoard() {
+            for (let i = 100; i >= 1; i--) {
+                const cell = document.createElement("div");
+                cell.classList.add("cell");
+                cell.innerText = i;
+                cell.id = cell-${i};
+                board.appendChild(cell);
+            }
+            updatePlayer();
+        }
+
+        function rollDice() {
+            const diceRoll = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("diceResult").innerText = "You rolled: " + diceRoll;
+            movePlayer(diceRoll);
+        }
+
+        function movePlayer(steps) {
+            playerPos += steps;
+            if (playerPos > 100) playerPos = 100;
+            updatePlayer();
+        }
+
+        function updatePlayer() {
+            document.querySelectorAll(".player").forEach(e => e.remove());
+            const player = document.createElement("div");
+            player.classList.add("player");
+            document.getElementById(cell-${playerPos}).appendChild(player);
+        }
+
+        createBoard();
+    </script>
 </body>
 </html>
+   
