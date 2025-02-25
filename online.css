@@ -67,3 +67,73 @@ footer {
     padding: 10px;
     margin-top: 50px;
 }
+
+/* تنظیمات کلی */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* هدر (ناوبری) */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* استایل لوگو */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* استایل منو */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* آیکون‌های سبد خرید و جستجو */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
