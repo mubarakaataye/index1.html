@@ -137,3 +137,55 @@ nav ul li a:hover {
 .icon:hover {
     transform: scale(1.2);
 }
+/* اسلایدر محصولات ویژه */
+.slider {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.slider h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 500px;
+}
+
+.slider-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slider-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.slider-item p {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0;
+}
