@@ -27,7 +27,7 @@ nav ul li a { color: white; text-decoration: none; }
 /* بنر */
 .banner {
     background: url('banner.jpg') no-repeat center/cover;
-    color: white;
+    color: rgb(8, 8, 8);
     padding: 100px 0;
 }
 .banner h1 { font-size: 36px; }
