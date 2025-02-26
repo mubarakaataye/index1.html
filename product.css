@@ -40,3 +40,8 @@ header input {
 .filters h2 {
     font-size: 18px;
 }
+
+.filters label {
+    display: block;
+    margin: 10px 0 5px;
+}
