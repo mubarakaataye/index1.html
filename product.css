@@ -22,3 +22,9 @@ header input {
     width: 200px;
     margin-top: 10px;
 }
+
+/* چیدمان صفحه */
+.container {
+    display: flex;
+    margin: 20px;
+}
