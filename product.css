@@ -63,3 +63,7 @@ header input {
     border-radius: 5px;
     transition: transform 0.3s;
 }
+
+.product:hover {
+    transform: scale(1.05);
+}
