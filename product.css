@@ -8,3 +8,11 @@ body {
     background-color: #f9f9f9;
     direction: rtl;
 }
+
+/* هدر */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
