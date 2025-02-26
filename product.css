@@ -72,3 +72,11 @@ header input {
     width: 100%;
     height: auto;
 }
+
+.product button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
