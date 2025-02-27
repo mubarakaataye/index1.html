@@ -10,4 +10,5 @@ body, html{
 }
 .fireworks-container{
     position: absolute;
+    width: 10px;
 }
