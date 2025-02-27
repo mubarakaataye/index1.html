@@ -12,5 +12,6 @@ body, html{
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 50%;
 
 }
