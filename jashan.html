@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جشن آتش‌بازی</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            margin-bottom: 50px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .firework {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            animation: firework-explode 1.5s ease-out forwards;
+        }
+
+        @keyframes firework-explode {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(-50%, -50%) scale(2) rotate(45deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(-200%, -100%) scale(0.5);
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 2;
+            margin-top: 50px;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff80ab;
+        }
+
+        /* Adding Fireworks Effect */
+        .firework-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>جشن اتمام HTML و CSS</h1>
+    <button class="button" onclick="launchFireworks()">شروع جشن</button>
+    <div class="firework-container" id="firework-container"></div>
+
+    <script>
+        function launchFireworks() {
+            const container = document.getElementById("firework-container");
+            const firework = document.createElement("div");
+            firework.classList.add("firework");
+            container.appendChild(firework);
+
+            const randomX = Math.random() * 100 - 50; // Random horizontal movement
+            const randomY = Math.random() * 100 - 50; // Random vertical movement
+
+            firework.style.left = "50%";
+            firework.style.top = "50%";
+            firework.style.animation = firework-explode 1.5s ease-out forwards;
+
+            firework.style.animation = firework-explode 1.5s ease-out forwards;
+
+            setTimeout(() => {
+                firework.remove();
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
